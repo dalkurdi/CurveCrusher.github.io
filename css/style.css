@@ -1,28 +1,120 @@
 /* Font List */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
 
 body {
-    background-color: rgb(22, 25, 43)
+    color: white;
+    font-family: "Roboto Slab";
+    background-color: #235390;
+
 }
-.navbar-text {
-    font-family: monospace;
+
+.font-bungee {
+    font-family: "Bungee";
 }
-.bg-custom {
-    background-color: rgb(22, 25, 43);
-}
+
+.pushable {
+    color: white;
+    border-radius: 12px;
+    outline-offset: 4px;
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: filter 600ms;
+    font-family:"Bungee";
+  }
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    transform: translateY(2px);
+    filter:blur(4px);
+  }
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  .front {
+    display: block;
+    position: relative;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    color: white;
+    transform: translateY(-4px);
+  }
+
+  .edge-green {
+    background: linear-gradient(
+        to left,
+        hsl(85deg 100% 16%) 0%,
+        hsl(85deg 100% 32%) 8%,
+        hsl(85deg 100% 32%) 92%,
+        hsl(85deg 100% 16%) 100%
+      );
+  }
+
+  .front-green {
+    background: #58CC03;
+  }
+
+  .edge-red {
+    background: linear-gradient(
+        to left,
+        hsl(340deg 100% 16%) 0%,
+        hsl(340deg 100% 32%) 8%,
+        hsl(340deg 100% 32%) 92%,
+        hsl(340deg 100% 16%) 100%
+      );
+  }
+
+  .front-red {
+    background: hsl(345deg 100% 47%);
+  }
+
+  .pushable:hover {
+    transition: filter 250ms;
+    filter: brightness(110%);
+  }
+  
+  .pushable:hover .front {
+    transform: translateY(-6px);
+  }
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+  }
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+  .pushable:active .shadow {
+    transform: translateY(1px);
+  }
+  
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+
 .custom-h1 {
-    font-family: 'Bungee Spice', cursive;
     font-weight: 500;
-    color: #ffff;
     font-size: 380%;
     padding-top: 4rem;
 }
 
 .custom-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-family: 'Catamaran', sans-serif;
     font-size: 120%;
     padding-bottom: 1rem;
 }
@@ -40,26 +132,22 @@ body {
 .str-bs {
     padding-top: 4rem;
     text-align: center;
-    font-family: 'Bungee Spice', cursive;
 }
 .str-bs h2 {
     font-size: 280%;
 }
 .home-el {
-    background-color: rgb(22, 25, 43);
-    padding-top: 9rem;
     padding-bottom: 9rem;
 }
 
 .btn-primary {
-    background-color: white;
-    color: rgb(22, 25, 43);
     font-weight: 600;
-    border-color: rgb(45, 49, 68);
+    border-width: 2px;
+}
+.btn-secondary {
+    outline-color: black;
 }
 .about-section {
-    font-family: 'Bungee Spice', cursive;
-    background-color: rgb(22, 25, 43);
     padding-top: 3rem;
 }
 .about-section h2 {
@@ -71,23 +159,20 @@ body {
 }
 .pg-abt {
     font-size: 140%;
-    font-family: 'Catamaran', sans-serif;
-    color: white;
     padding-bottom: 6rem;
 }
 .set-img {
     padding-bottom: 2rem;
 }
 .card-body {
-    border:1px solid rgb(45, 49, 68);
+    border:1px solid #F6F4EC;
 }
 .card1:hover {
-    background:#30324d;
-    border:1px solid rgb(45, 49, 68);
+    background:#F6F4EC;
   }
 
   .card1:hover .list-group-item{
-    background:#30324d !important
+    background:#F6F4EC !important
   }
 
   
@@ -99,22 +184,20 @@ body {
 
 
   .card2:hover {
-    background:#30324d;
-    border:1px solid rgb(45, 49, 68);
+    background: #F6F4EC;
   }
 
   .card2:hover .list-group-item{
-    background:#30324d !important
+    background:#F6F4EC !important
   }
 
 
   .card3:hover {
-    background:#30324d;
-    border:1px solid rgb(45, 49, 68);
+    background:#F6F4EC;
   }
 
   .card3:hover .list-group-item{
-    background:#30324d !important
+    background:#F6F4EC !important
   }
 
 
@@ -123,20 +206,22 @@ body {
     background:#212529;
   }
 .contact-pg {
-    font-family: 'Bungee Spice', cursive;
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
 .contact-pg h2 {
     font-size: 280%;
 }
-.lt-footer {
-    font-family: 'Bungee Spice', cursive;
-    padding-top: 2rem;
-    background-color: rgb(22, 25, 43);
-}
 
 ul {
     text-align: center;
     list-style-position: inside;
+}
+
+.text-colored {
+    font-weight: bold;
+}
+
+.card-font-black {
+    color: black;
 }
