@@ -166,14 +166,20 @@ body {
     padding-bottom: 2rem;
 }
 .card-body {
-    border:1px solid #F6F4EC;
+    border:1px solid #fcfcf9 ;
 }
-.card1:hover {
-    background:#F6F4EC;
+.card {
+  background-color: #fcfcf9 ;
+  color: #17365f;
+}
+.card:hover {
+    background:white;
+    color: #17365f;;
   }
 
   .card1:hover .list-group-item{
-    background:#F6F4EC !important
+    background:#fcfcf9 !important
+
   }
 
   
@@ -185,26 +191,26 @@ body {
 
 
   .card2:hover {
-    background: #F6F4EC;
+    background: #fcfcf9 ;
   }
 
   .card2:hover .list-group-item{
-    background:#F6F4EC !important
+    background:#fcfcf9  !important
   }
 
 
   .card3:hover {
-    background:#F6F4EC;
+    background:#fcfcf9 ;
   }
 
   .card3:hover .list-group-item{
-    background:#F6F4EC !important
+    background:#fcfcf9  !important
   }
 
 
   .card:hover .btn-outline-dark{
     color:white;
-    background:#212529;
+    background:#fcfcf9 ;
   }
 .contact-pg {
     padding-top: 3rem;
@@ -225,4 +231,9 @@ ul {
 
 .card-font-black {
     color: black;
+}
+
+.white-background {
+  background-color: white;
+  color: #17365f;
 }
